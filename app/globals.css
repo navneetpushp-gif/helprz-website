@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #0B1230;
+
+  /* Helprz brand tokens — matched to the live site's design system */
+  --ink: #0B1230;         /* body text */
+  --ink-soft: #5B6280;    /* secondary text */
+  --indigo: #0D1B63;      /* primary brand navy */
+  --indigo-deep: #081246; /* darker navy for deep sections */
+  --marigold: #F6B90D;    /* primary accent (buttons, highlights) */
+  --marigold-deep: #E0A300;
+  --brick: #E0A300;
+  --brick-deep: #C6811C;
+  --sand: #FFFFFF;
+  --sand-deep: #FBFBFF;
+  --line: #E7E7F2;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-indigo: var(--indigo);
+  --color-indigo-deep: var(--indigo-deep);
+  --color-marigold: var(--marigold);
+  --color-marigold-deep: var(--marigold-deep);
+  --color-brick: var(--brick);
+  --color-brick-deep: var(--brick-deep);
+  --color-sand: var(--sand);
+  --color-sand-deep: var(--sand-deep);
+  --color-line: var(--line);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Work Sans", Arial, Helvetica, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Signature motif carried over from the live site: the "threshold"
+   doormat stripe, reused here as a section divider so generated pages
+   feel like the same site as the flagship homepage. */
+.threshold {
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    127deg,
+    var(--brick) 0 7px,
+    var(--marigold) 7px 14px,
+    var(--indigo) 14px 21px
+  );
+  background-size: 21px 21px;
+}
