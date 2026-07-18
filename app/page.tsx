@@ -572,6 +572,21 @@ export default function HomePage() {
             </button>
           </div>
         </div>
+    </section>
+
+      {/* ===== REGISTERED WITH ===== */}
+      <section className="border-t border-line bg-white py-14">
+        <div className="mx-auto max-w-6xl px-6">
+          <h3 className="text-center font-display text-xl font-bold text-indigo md:text-2xl">
+            Registered With
+          </h3>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-14 gap-y-8">
+            <img src="/skill-india.png" alt="Skill India" className="h-20 w-auto md:h-24" />
+            <img src="/startup-india.png" alt="Startup India" className="h-20 w-auto md:h-24" />
+            <img src="/ministry-labour.png" alt="Ministry of Labour and Employment, Government of India" className="h-20 w-auto md:h-24" />
+            <img src="/msme.png" alt="MSME - Micro, Small & Medium Enterprises" className="h-20 w-auto md:h-24" />
+          </div>
+        </div>
       </section>
     </main>
     </>
