@@ -19,12 +19,11 @@ export default function Header() {
     <header className="sticky top-0 z-40 bg-indigo">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <Link href="/" className="flex items-center gap-3">
-          <svg viewBox="0 0 42 42" fill="none" className="h-9 w-9 flex-shrink-0">
-            <rect width="42" height="42" rx="11" fill="#F6B90D" />
-            <path d="M11 20L21 11L31 20" stroke="#0D1B63" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M14 18V30H28V18" stroke="#0D1B63" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
-            <rect x="19" y="23" width="4" height="7" fill="#0D1B63" />
-          </svg>
+          <img
+            src="/logo-header.png"
+            alt="Helprz logo"
+            className="h-11 w-11 flex-shrink-0"
+          />
           <div>
             <div className="font-display text-xl font-bold leading-none text-white">
               Helpr<em className="not-italic text-marigold">z</em>
