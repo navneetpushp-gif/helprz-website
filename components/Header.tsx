@@ -25,7 +25,7 @@ export default function Header() {
             className="h-11 w-11 flex-shrink-0"
           />
           <div>
-            <div className="font-display text-xl font-bold leading-none text-white">
+            <div className="font-display text-2xl font-bold leading-none text-white">
               Helpr<em className="not-italic text-marigold">z</em>
             </div>
             <div className="font-mono text-[9px] font-semibold tracking-[0.18em] text-[#B9C6CE]">
