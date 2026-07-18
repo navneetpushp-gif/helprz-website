@@ -192,8 +192,8 @@ export default function HomePage() {
                 App launching soon
               </div>
               <div className="mt-3 flex flex-wrap items-center gap-3">
-                <img src="/google-play-badge.png" alt="Get it on Google Play — launching soon" className="h-12 w-auto rounded-lg bg-white p-1"className="h-12 w-auto" />
-                <img src="/app-store-badge.png" alt="Download on the App Store — launching soon" className="h-12 w-auto rounded-lg bg-white p-1"className="h-12 w-auto" />
+                <img src="/google-play-badge.png" alt="Get it on Google Play — launching soon" className="h-12 w-auto rounded-lg bg-white p-1" />
+                <img src="/app-store-badge.png" alt="Download on the App Store — launching soon" className="h-12 w-auto rounded-lg bg-white p-1" />
               </div>
             </div>
             <ul className="mt-7 flex flex-col gap-3">
