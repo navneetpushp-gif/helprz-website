@@ -182,11 +182,20 @@ export default function HomePage() {
               Someone&rsquo;s at the door.{" "}
               <em className="not-italic">They&rsquo;re</em> here to help.
             </p>
-            <p className="mt-6 max-w-[480px] text-[17px] leading-relaxed text-[#C9D3D8]">
+          <p className="mt-6 max-w-[480px] text-[17px] leading-relaxed text-[#C9D3D8]">
               Helprz puts a verified maid, cook, driver, nanny or carer on
               your doorstep — background-checked, trained, and booked from
               your phone in under two minutes.
             </p>
+            <div className="mt-6">
+              <div className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-marigold">
+                App launching soon
+              </div>
+              <div className="mt-3 flex flex-wrap items-center gap-3 opacity-90">
+                <img src="/google-play-badge.png" alt="Get it on Google Play — launching soon" className="h-12 w-auto" />
+                <img src="/app-store-badge.png" alt="Download on the App Store — launching soon" className="h-12 w-auto" />
+              </div>
+            </div>
             <ul className="mt-7 flex flex-col gap-3">
               {[
                 "ID-verified, background-checked",
