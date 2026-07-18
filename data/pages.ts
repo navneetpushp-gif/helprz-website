@@ -1,5 +1,5 @@
 import { PageData } from "@/lib/types";
-
+import { buildGeneratedPages } from "./generatedPages";
 // ============================================================================
 // THIS FILE IS THE "DATABASE".
 //
@@ -785,8 +785,13 @@ export const pages: PageData[] = [
   },
 ];
 
+const key = (p: PageData) => `${p.citySlug}/${p.localitySlug}/${p.serviceSlug}`;
+const handWrittenKeys = new Set(pages.map(key));
+const generated = buildGeneratedPages().filter((p) => !handWrittenKeys.has(key(p)));
+const allPages: PageData[] = [...pages, ...generated];
+
 export function getAllPages(): PageData[] {
-  return pages;
+  return allPages;
 }
 
 export function findPage(
@@ -794,7 +799,7 @@ export function findPage(
   localitySlug: string,
   serviceSlug: string
 ): PageData | undefined {
-  return pages.find(
+  return allPages.find(
     (p) =>
       p.citySlug === citySlug &&
       p.localitySlug === localitySlug &&
