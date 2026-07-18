@@ -423,8 +423,9 @@ export default function HomePage() {
           </div>
 
           <div className="mt-10 flex flex-wrap gap-x-2 gap-y-2 border-t border-line pt-8">
-            {[...byLocality.entries()].map(([key, group]) =>
-              group.links.map((l) => (
+            {[...byLocality.entries()].slice(0, 24).map(([key, group]) => {
+              const l = group.links[0];
+              return (
                 <Link
                   key={l.href}
                   href={l.href}
@@ -432,10 +433,9 @@ export default function HomePage() {
                 >
                   {l.label} &middot; {group.localityName}
                 </Link>
-              ))
-            )}
+              );
+            })}
           </div>
-        </div>
       </section>
 
       {/* ===== FAQ ===== */}
