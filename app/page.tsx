@@ -167,8 +167,8 @@ export default function HomePage() {
       />
       <main className="bg-white">
       {/* ===== HERO ===== */}
-      <section id="home" className="relative overflow-hidden bg-indigo pb-0 pt-4">
-        <div className="mx-auto grid max-w-6xl items-center gap-9 px-6 py-12 lg:grid-cols-[1.08fr_0.92fr]">
+      <section id="home" className="relative overflow-hidden bg-indigo pb-0 pt-0">
+        <div className="mx-auto grid max-w-6xl items-center gap-9 px-6 pb-12 pt-4 lg:grid-cols-[1.08fr_0.92fr]">
           <div>
             <div className="font-mono text-[13px] font-semibold uppercase tracking-[0.16em] text-marigold">
               Delhi/NCR home services, sorted
