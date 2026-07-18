@@ -83,7 +83,12 @@ export default async function LocationServicePage({
       address: {
         "@type": "PostalAddress",
         addressLocality: data.cityName,
-        addressRegion: "Haryana",
+        addressRegion:
+  data.citySlug === "noida"
+    ? "Uttar Pradesh"
+    : data.citySlug === "delhi"
+    ? "Delhi"
+    : "Haryana",
         addressCountry: "IN",
       },
     },
